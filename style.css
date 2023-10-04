@@ -296,6 +296,21 @@ img {
   padding-bottom: 0.62rem;
   color: white;
 }
+@media (max-width: 1440px) {
+  .blog-articles {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
+  }
+  .blogs-card {
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 20rem));
+    justify-content: center;
+  }
+}
+@media (max-width: 860px) {
+  .categories-fields {
+    flex-wrap: wrap;
+  }
+}
 
 @media (max-width: 768px) {
   .Japan-house {
@@ -323,11 +338,15 @@ img {
   .blog-articles {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 17rem));
   }
-  .categories-fields {
-    flex-wrap: wrap;
-  }
+
   .subscribe {
     padding-top: 1rem;
+  }
+  .categories-second-fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
   }
 }
 
@@ -338,7 +357,7 @@ img {
   }
 
   .categories-fields {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .blog-articles {
     grid-template-columns: repeat(auto-fill, minmax(17rem, 20rem));
@@ -350,15 +369,18 @@ img {
   .blog-details {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 1440px) {
-  .blog-articles {
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
+  .large-cards {
+    display: flex;
+    flex-direction: column;
   }
-  .blogs-card {
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 20rem));
-    justify-content: center;
+}
+@media (max-width: 390px) {
+  .categories-fields {
+    flex-direction: column;
+  }
+  .categories-second-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
